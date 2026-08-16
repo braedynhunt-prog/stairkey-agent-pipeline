@@ -1,4 +1,3 @@
-[stairkey_multiagent_writeup_final.md](https://github.com/user-attachments/files/31121689/stairkey_multiagent_writeup_final.md)
 # I shipped a SaaS product with a team of AI agents. Here's the actual system.
 
 *Under five months. ~3,700 commits, ~3,000 merged PRs, 285,000 lines of production code. I didn't
