@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 780" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#5A6B7A"/>
+    </marker>
+  </defs>
+
+  <rect width="1440" height="780" fill="#FFFFFF"/>
+
+  <!-- Title -->
+  <text x="40" y="46" font-size="24" font-weight="bold" fill="#1A3C5E">Stairkey — the multi-agent development pipeline</text>
+  <text x="40" y="68" font-size="13" fill="#595959">How ~3,000 merged PRs and 285K lines of production code shipped in under five months, with every engineer an AI agent</text>
+
+  <!-- Human judgment band -->
+  <rect x="40" y="84" width="1360" height="76" rx="8" fill="#1A3C5E"/>
+  <text x="720" y="115" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="middle">BRAEDYN HUNT — FOUNDER &amp; CTO · the human judgment layer</text>
+  <text x="720" y="138" font-size="12.5" fill="#C9D6E2" text-anchor="middle">system architecture · security-sensitive design · scope decisions · approves every PR into the queue ("merge when green") · ship / no-ship</text>
+
+  <!-- Arrows from human band -->
+  <line x1="420" y1="160" x2="420" y2="206" stroke="#5A6B7A" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <text x="430" y="188" font-size="10.5" fill="#595959">specs · scope</text>
+  <line x1="980" y1="160" x2="980" y2="206" stroke="#5A6B7A" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <text x="990" y="188" font-size="10.5" fill="#595959">PR approval</text>
+
+  <!-- Worktrees container -->
+  <rect x="40" y="210" width="760" height="470" rx="10" fill="#F7F9FB" stroke="#D5DDE5"/>
+  <text x="60" y="236" font-size="13" font-weight="bold" fill="#1A3C5E">PARALLEL WORKTREES — one agent team per worktree</text>
+
+  <!-- Lane 1 -->
+  <rect x="60" y="250" width="225" height="320" rx="8" fill="#FFFFFF" stroke="#C9D4DE"/>
+  <text x="72" y="272" font-size="12.5" font-weight="bold" fill="#1A3C5E">WORKTREE 1</text>
+  <text x="72" y="288" font-size="10" fill="#595959">own branch · own committer identity</text>
+  <text x="72" y="301" font-size="10" fill="#595959">isolated Docker stack (ports, DB volume)</text>
+  <rect x="72" y="312" width="201" height="46" rx="6" fill="#E3EBF3" stroke="#9FB4C8"/>
+  <text x="82" y="330" font-size="11.5" font-weight="bold" fill="#1A3C5E">DRIVER — frontier model</text>
+  <text x="82" y="346" font-size="10" fill="#44525F">plans, orchestrates, decides in-task</text>
+  <line x1="172" y1="358" x2="172" y2="372" stroke="#5A6B7A" stroke-width="1.4" marker-end="url(#arrow)"/>
+  <text x="180" y="369" font-size="9.5" fill="#595959">spec</text>
+  <rect x="72" y="374" width="201" height="46" rx="6" fill="#F6EFE2" stroke="#CBB88E"/>
+  <text x="82" y="392" font-size="11.5" font-weight="bold" fill="#6B5619">IMPLEMENTER — cheap tier</text>
+  <text x="82" y="408" font-size="10" fill="#5C5646">writes code to the driver's spec</text>
+  <line x1="172" y1="420" x2="172" y2="434" stroke="#5A6B7A" stroke-width="1.4" marker-end="url(#arrow)"/>
+  <text x="180" y="431" font-size="9.5" fill="#595959">diff</text>
+  <rect x="72" y="436" width="201" height="58" rx="6" fill="#FDF4F1" stroke="#A8442E" stroke-width="1.6"/>
+  <text x="82" y="454" font-size="11.5" font-weight="bold" fill="#A8442E">REVIEWER — frontier model</text>
+  <text x="82" y="469" font-size="10" fill="#5C4A45">fresh context — never saw the</text>
+  <text x="82" y="481" font-size="10" fill="#5C4A45">implementation conversation</text>
+  <line x1="172" y1="494" x2="172" y2="512" stroke="#5A6B7A" stroke-width="1.4" marker-end="url(#arrow)"/>
+  <text x="180" y="507" font-size="9.5" fill="#595959">Playwright browser test</text>
+  <rect x="72" y="514" width="201" height="40" rx="6" fill="#FFFFFF" stroke="#5A6B7A"/>
+  <text x="172" y="538" font-size="11.5" font-weight="bold" fill="#1F1F1F" text-anchor="middle">PR opened = queued</text>
+
+  <!-- Lane 2 -->
+  <rect x="305" y="250" width="225" height="320" rx="8" fill="#FFFFFF" stroke="#C9D4DE"/>
+  <text x="317" y="272" font-size="12.5" font-weight="bold" fill="#1A3C5E">WORKTREE 2</text>
+  <text x="317" y="288" font-size="10" fill="#595959">own branch · own committer identity</text>
+  <text x="317" y="301" font-size="10" fill="#595959">isolated Docker stack (ports, DB volume)</text>
+  <rect x="317" y="312" width="201" height="46" rx="6" fill="#E3EBF3" stroke="#9FB4C8"/>
+  <text x="327" y="330" font-size="11.5" font-weight="bold" fill="#1A3C5E">DRIVER — frontier model</text>
+  <text x="327" y="346" font-size="10" fill="#44525F">plans, orchestrates, decides in-task</text>
+  <line x1="417" y1="358" x2="417" y2="372" stroke="#5A6B7A" stroke-width="1.4" marker-end="url(#arrow)"/>
+  <text x="425" y="369" font-size="9.5" fill="#595959">spec</text>
+  <rect x="317" y="374" width="201" height="46" rx="6" fill="#F6EFE2" stroke="#CBB88E"/>
+  <text x="327" y="392" font-size="11.5" font-weight="bold" fill="#6B5619">IMPLEMENTER — cheap tier</text>
+  <text x="327" y="408" font-size="10" fill="#5C5646">writes code to the driver's spec</text>
+  <line x1="417" y1="420" x2="417" y2="434" stroke="#5A6B7A" stroke-width="1.4" marker-end="url(#arrow)"/>
+  <text x="425" y="431" font-size="9.5" fill="#595959">diff</text>
+  <rect x="317" y="436" width="201" height="58" rx="6" fill="#FDF4F1" stroke="#A8442E" stroke-width="1.6"/>
+  <text x="327" y="454" font-size="11.5" font-weight="bold" fill="#A8442E">REVIEWER — frontier model</text>
+  <text x="327" y="469" font-size="10" fill="#5C4A45">fresh context — never saw the</text>
+  <text x="327" y="481" font-size="10" fill="#5C4A45">implementation conversation</text>
+  <line x1="417" y1="494" x2="417" y2="512" stroke="#5A6B7A" stroke-width="1.4" marker-end="url(#arrow)"/>
+  <text x="425" y="507" font-size="9.5" fill="#595959">Playwright browser test</text>
+  <rect x="317" y="514" width="201" height="40" rx="6" fill="#FFFFFF" stroke="#5A6B7A"/>
+  <text x="417" y="538" font-size="11.5" font-weight="bold" fill="#1F1F1F" text-anchor="middle">PR opened = queued</text>
+
+  <!-- Lane 3 (ghost) -->
+  <rect x="550" y="250" width="225" height="320" rx="8" fill="#FFFFFF" stroke="#C9D4DE" stroke-dasharray="6 4"/>
+  <text x="562" y="272" font-size="12.5" font-weight="bold" fill="#1A3C5E">WORKTREE N (3+ in parallel)</text>
+  <text x="562" y="288" font-size="10" fill="#595959">same team structure —</text>
+  <text x="562" y="301" font-size="10" fill="#595959">driver → implementer → reviewer → PR</text>
+  <text x="662" y="420" font-size="30" fill="#9FB4C8" text-anchor="middle">· · ·</text>
+  <text x="662" y="455" font-size="10.5" fill="#595959" text-anchor="middle">swarm workers fan out from here</text>
+  <text x="662" y="469" font-size="10.5" fill="#595959" text-anchor="middle">for audits and codebase sweeps</text>
+
+  <!-- Coordination connectors -->
+  <line x1="172" y1="570" x2="172" y2="592" stroke="#5A6B7A" stroke-width="1.4" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+  <line x1="417" y1="570" x2="417" y2="592" stroke="#5A6B7A" stroke-width="1.4" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+  <line x1="662" y1="570" x2="662" y2="592" stroke="#5A6B7A" stroke-width="1.4" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
+
+  <!-- Coordination layer -->
+  <rect x="60" y="596" width="350" height="64" rx="6" fill="#E3EBF3" stroke="#9FB4C8"/>
+  <text x="74" y="618" font-size="11.5" font-weight="bold" fill="#1A3C5E">INBOX — real-time claims (outside the repo)</text>
+  <text x="74" y="636" font-size="10.5" fill="#44525F">tail → claim (with ETA) → work → done only when</text>
+  <text x="74" y="649" font-size="10.5" fill="#44525F">the PR actually merges</text>
+  <rect x="430" y="596" width="350" height="64" rx="6" fill="#E3EBF3" stroke="#9FB4C8"/>
+  <text x="444" y="618" font-size="11.5" font-weight="bold" fill="#1A3C5E">COORDINATION.md — in-repo shared state</text>
+  <text x="444" y="636" font-size="10.5" fill="#44525F">file lock table · structural decisions · rotated at</text>
+  <text x="444" y="649" font-size="10.5" fill="#44525F">~40KB so agents actually read it</text>
+
+  <!-- PRs arrow to merge pipeline -->
+  <line x1="800" y1="420" x2="836" y2="420" stroke="#5A6B7A" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="818" y="408" font-size="11" font-weight="bold" fill="#595959" text-anchor="middle">PRs</text>
+
+  <!-- Merge pipeline container -->
+  <rect x="840" y="210" width="280" height="470" rx="10" fill="#F7F9FB" stroke="#D5DDE5"/>
+  <text x="856" y="236" font-size="13" font-weight="bold" fill="#1A3C5E">MERGE PIPELINE — serialized</text>
+  <rect x="856" y="250" width="248" height="74" rx="6" fill="#E3EBF3" stroke="#9FB4C8"/>
+  <text x="868" y="272" font-size="11.5" font-weight="bold" fill="#1A3C5E">MERGIFY MERGE QUEUE</text>
+  <text x="868" y="290" font-size="10.5" fill="#44525F">rebase → batch validate → squash</text>
+  <text x="868" y="304" font-size="10.5" fill="#44525F">the single writer to main — agents never merge</text>
+  <line x1="980" y1="324" x2="980" y2="340" stroke="#5A6B7A" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <rect x="856" y="344" width="248" height="160" rx="6" fill="#FDF4F1" stroke="#A8442E" stroke-width="1.6"/>
+  <text x="868" y="366" font-size="11.5" font-weight="bold" fill="#A8442E">CI — 9 REQUIRED CHECKS</text>
+  <text x="868" y="382" font-size="10.5" fill="#5C4A45">on 2 self-hosted runners</text>
+  <text x="868" y="402" font-size="10.5" fill="#44525F">· builds · lint deltas · smoke suites</text>
+  <text x="868" y="418" font-size="10.5" fill="#44525F">· tenant-isolation audit on new routes</text>
+  <text x="868" y="434" font-size="10.5" fill="#44525F">· dependency advisories block merge</text>
+  <text x="868" y="450" font-size="10.5" fill="#44525F">· CSP · check-name parity gate</text>
+  <text x="868" y="470" font-size="10" fill="#8A6A63" font-style="italic">every gate exists because its failure</text>
+  <text x="868" y="483" font-size="10" fill="#8A6A63" font-style="italic">mode actually happened</text>
+  <line x1="980" y1="504" x2="980" y2="522" stroke="#5A6B7A" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <text x="990" y="517" font-size="10" fill="#595959">green only</text>
+  <rect x="856" y="526" width="248" height="44" rx="6" fill="#1A3C5E"/>
+  <text x="980" y="553" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">main</text>
+  <path d="M 856 548 C 800 556, 786 596, 798 636" fill="none" stroke="#5A6B7A" stroke-width="1.4" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
+  <text x="862" y="600" font-size="10" fill="#595959">worktrees rebase</text>
+  <text x="862" y="613" font-size="10" fill="#595959">onto latest main</text>
+
+  <!-- Cross-cutting column -->
+  <text x="1150" y="236" font-size="13" font-weight="bold" fill="#1A3C5E">CROSS-CUTTING SYSTEMS</text>
+  <rect x="1150" y="250" width="250" height="128" rx="6" fill="#FDF4F1" stroke="#A8442E" stroke-width="1.6"/>
+  <text x="1162" y="272" font-size="11.5" font-weight="bold" fill="#A8442E">SWARM AUDITS — periodic</text>
+  <text x="1162" y="292" font-size="10.5" fill="#44525F">hundreds of scoped finder agents</text>
+  <text x="1162" y="308" font-size="10.5" fill="#44525F">→ independent skeptic verifiers</text>
+  <text x="1162" y="324" font-size="10.5" fill="#44525F">→ only surviving findings get filed</text>
+  <text x="1162" y="340" font-size="10.5" fill="#44525F">→ ranked backlog the drivers pull from</text>
+  <text x="1162" y="360" font-size="10" fill="#8A6A63" font-style="italic">largest run: 22 stages, 965 findings</text>
+  <rect x="1150" y="396" width="250" height="112" rx="6" fill="#E3EBF3" stroke="#9FB4C8"/>
+  <text x="1162" y="418" font-size="11.5" font-weight="bold" fill="#1A3C5E">INSTITUTIONAL MEMORY</text>
+  <text x="1162" y="438" font-size="10.5" fill="#44525F">one fact per file, shared by all agents</text>
+  <text x="1162" y="454" font-size="10.5" fill="#44525F">force-injected by hooks at task start</text>
+  <text x="1162" y="470" font-size="10.5" fill="#44525F">repeat incidents become mechanisms:</text>
+  <text x="1162" y="486" font-size="10.5" fill="#44525F">hooks, CI gates, auto-injection</text>
+  <rect x="1150" y="526" width="250" height="112" rx="6" fill="#F6EFE2" stroke="#CBB88E"/>
+  <text x="1162" y="548" font-size="11.5" font-weight="bold" fill="#6B5619">ECONOMICS</text>
+  <text x="1162" y="568" font-size="10.5" fill="#5C5646">cheap tier implements, frontier reviews</text>
+  <text x="1162" y="584" font-size="10.5" fill="#5C5646">look-ups go to disposable sub-agents</text>
+  <text x="1162" y="600" font-size="10.5" fill="#5C5646">token budgets · checkpoint &amp; resume</text>
+  <text x="1162" y="616" font-size="10.5" fill="#5C5646">context is the cost, not agent time</text>
+
+  <!-- Legend + footer -->
+  <rect x="40" y="712" width="14" height="14" rx="3" fill="#1A3C5E"/>
+  <text x="60" y="723" font-size="11" fill="#1F1F1F">human</text>
+  <rect x="120" y="712" width="14" height="14" rx="3" fill="#E3EBF3" stroke="#9FB4C8"/>
+  <text x="140" y="723" font-size="11" fill="#1F1F1F">frontier-model agents / coordination</text>
+  <rect x="340" y="712" width="14" height="14" rx="3" fill="#F6EFE2" stroke="#CBB88E"/>
+  <text x="360" y="723" font-size="11" fill="#1F1F1F">cheap-tier agents / economics</text>
+  <rect x="530" y="712" width="14" height="14" rx="3" fill="#FDF4F1" stroke="#A8442E" stroke-width="1.6"/>
+  <text x="550" y="723" font-size="11" fill="#1F1F1F">verification gate</text>
+  <text x="1400" y="723" font-size="12.5" font-style="italic" font-weight="bold" fill="#1A3C5E" text-anchor="end">Core rule: never let the entity that produced the work vouch for it.</text>
+  <text x="40" y="756" font-size="10.5" fill="#8A959E">Stairkey · Braedyn Hunt · github.com/braedynhunt-prog/stairkey-agent-pipeline</text>
+</svg>
