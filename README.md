@@ -44,8 +44,7 @@ Once you see it as an org, the rest of the system is just the stuff every engine
 needs: don't step on each other, don't break main, don't trust unverified work, don't
 forget what you learned.
 
-<!-- TODO before publishing: one-page architecture diagram goes well here —
-worktrees + Docker stacks → inbox/claims → merge queue → CI gates → main -->
+![One-page architecture: human judgment layer, parallel worktree agent teams, coordination layer, serialized merge pipeline, and cross-cutting systems](stairkey_pipeline_diagram.svg)
 
 ## Parallelism without collisions
 
