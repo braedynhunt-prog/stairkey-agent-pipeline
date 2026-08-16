@@ -9,11 +9,11 @@
 
   <!-- Title -->
   <text x="40" y="46" font-size="24" font-weight="bold" fill="#1A3C5E">Stairkey — the multi-agent development pipeline</text>
-  <text x="40" y="68" font-size="13" fill="#595959">How ~3,000 merged PRs and 285K lines of production code shipped in under five months, with every engineer an AI agent</text>
+  <text x="40" y="68" font-size="13" fill="#595959">How ~3,000 merged PRs and 285K lines of production code shipped in under five months, with an engineering team built from AI agents</text>
 
   <!-- Human judgment band -->
   <rect x="40" y="84" width="1360" height="76" rx="8" fill="#1A3C5E"/>
-  <text x="720" y="115" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="middle">BRAEDYN HUNT — FOUNDER &amp; CTO · the human judgment layer</text>
+  <text x="720" y="115" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="middle">BRAEDYN HUNT — CO-FOUNDER &amp; CTO · the human judgment layer</text>
   <text x="720" y="138" font-size="12.5" fill="#C9D6E2" text-anchor="middle">system architecture · security-sensitive design · scope decisions · approves every PR into the queue ("merge when green") · ship / no-ship</text>
 
   <!-- Arrows from human band -->
