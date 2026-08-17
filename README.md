@@ -9,7 +9,7 @@ balanced ledger, the offline contractor portal surviving a dead network, and the
 agent pipeline that shipped all of it.
 
 
-![Offline outbox: the network dies, the write queues locally, then syncs on reconnect](stairkey_offline_sync_v2.gif)
+![Offline outbox: the network dies, the write queues locally, then syncs on reconnect](stairkey_offline_sync_V2.gif)
 
 
 
