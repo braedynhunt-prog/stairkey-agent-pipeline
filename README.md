@@ -4,6 +4,15 @@
 hand-write the code — and this post is about the part I did build: the AI-agent
 engineering organization that produced it.*
 
+**[▶ Watch the 4-minute demo](https://youtu.be/mSWxMIRrxJI)** — estimate → invoice →
+balanced ledger, the offline contractor portal surviving a dead network, and the
+agent pipeline that shipped all of it.
+
+
+![Offline outbox: the network dies, the write queues locally, then syncs on reconnect](stairkey_offline_sync.gif)
+
+
+
 ---
 
 I'm a co-founder and the CTO of Stairkey, a business-management platform for construction and
@@ -212,3 +221,11 @@ sleep, and there are hundreds of them when I need there to be.
 *Braedyn Hunt is a co-founder & the CTO of Stairkey. If you're working on agentic development
 tooling — or hiring people who run it in production — I'd love to talk:
 braedynhunt@gmail.com · github.com/braedynhunt-prog.*
+
+
+https://github.com/user-attachments/assets/5906c13c-19a5-4c54-99ec-29b70cb27a07
+
+
+
+https://github.com/user-attachments/assets/e8cdfc25-78fd-4f7c-a89b-b74b660d2da6
+
